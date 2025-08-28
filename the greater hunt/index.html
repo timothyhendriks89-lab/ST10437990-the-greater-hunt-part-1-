@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Greater Hunt — Guild Gate</title>
+  <meta name="description" content="Enter The Greater Hunt: a dark fantasy guild armory for adventurers." />
+
+  <style>
+    /* GLOBAL STYLES */
+    body { margin: 0; font-family: "Georgia", serif; background: #111; color: #eee; line-height: 1.6; }
+    header { background: #1a1a1a; padding: 1rem; text-align: center; border-bottom: 2px solid crimson; }
+    header h1 { font-family: "Cinzel", serif; font-size: 2.2rem; color: gold; margin: 0.5rem 0; }
+    nav a { color: #ccc; margin: 0 0.8rem; text-decoration: none; font-weight: bold; }
+    nav a:hover, nav a[aria-current="page"] { color: crimson; }
+    main { padding: 2rem; max-width: 1000px; margin: auto; }
+    h2, h3, h4 { font-family: "Cinzel", serif; color: gold; }
+    a { color: crimson; } a:hover { color: goldenrod; }
+    img { display: block; margin: 1rem auto; border: 3px solid #333; border-radius: 8px; box-shadow: 0 0 10px rgba(255,0,0,0.4); }
+    footer { text-align: center; background: #1a1a1a; padding: 1rem; margin-top: 2rem; border-top: 2px solid crimson; color: #aaa; }
+    /* HOME PAGE */
+    body.index main section[aria-label="Hero"] { text-align: center; padding: 3rem 1rem; background: url("images/guild-bg.jpg") no-repeat center/cover; color: #fff; border: 3px solid crimson; border-radius: 12px; }
+    body.index section#featured-title ul { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; list-style: none; padding: 0; }
+    body.index section#featured-title li { background: #222; padding: 1rem; border-radius: 10px; width: 250px; text-align: center; }
+  </style>
+</head>
+<body class="index">
+  <header>
+    <h1>The Greater Hunt</h1>
+    <nav aria-label="Primary">
+      <a href="index.html" aria-current="page">Guild Gate</a>
+      <a href="about.html">The Guild’s Tale</a>
+      <a href="products.html">The Armory</a>
+      <a href="enquiry.html">Guild Scrolls</a>
+      <a href="contact.html">The Guild Hall</a>
+      <a href="blog.html">Hunt Logs</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-label="Hero">
+      <h2>Prepare for the Hunt</h2>
+      <img src="the greater hunt/images/the hall.webp" alt="Torchlit guild hall entrance with banners" width="600" />
+      <p>Step into the torchlit hall. Choose your relics. Face the wilds.</p>
+      <a href="products.html">Enter the Armory</a>
+    </section>
+
+    <section aria-labelledby="featured-title">
+      <h2 id="featured-title">Featured Relics</h2>
+      <ul>
+        <li>
+          <img src="the greater hunt/images/dragon sword.webp" alt="Dragonsbane Longsword" width="250" />
+          <a href="products.html#weapons">Dragonsbane Longsword</a>
+          <p>Steel tempered in wyrmfire. Balanced for duel or raid.</p>
+        </li>
+        <li>
+          <img src="the greater hunt/images/arm.webp" alt="Warden’s Plate Armor" width="250" />
+          <a href="products.html#armor">Warden’s Plate</a>
+          <p>Layered plates with rune-lined padding.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2025</span> The Greater Hunt. All rights reserved.</p>
+  </footer>
+</body>
+</html>
